@@ -44,7 +44,7 @@ for arch in archivos:
         ruta_origen = os.path.join(ruta_descargas, arch)
         ruta_destino = os.path.join(carpeta_documentos, arch)
         shutil.move(ruta_origen, ruta_destino)
-    elif arch.endswith(".exe"):
+    elif arch.endswith((".exe", ".msi")):
         ruta_origen = os.path.join(ruta_descargas, arch)
         ruta_destino = os.path.join(carpeta_programas, arch)
         shutil.move(ruta_origen, ruta_destino)
